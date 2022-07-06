@@ -1,13 +1,12 @@
 #include "main.h"
 
 /**
-* print_last_digit - return last digit
-* @n : number to check
-* Return:0 or 1
+* print_last_digit -> prints the last digit
+* @n : passed the args
+* Return: the last digit
 */
 
 int print_last_digit(int n)
-
 {
 int x;
 if (n < 0)
