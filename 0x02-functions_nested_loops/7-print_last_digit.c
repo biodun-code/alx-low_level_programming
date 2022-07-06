@@ -3,16 +3,15 @@
 /**
 * print_last_digit - return last digit
 * @n : number to check
-* Return:0 or 1
+* Return:the last digiy
 */
 
 int print_last_digit(int n)
 {
-
-	n = n >= 0 ? n : n * -1;
-	int last = n % 10;
-	_putchar('0' + n % 10);
-
-	return (n % 10);
-
+	int x;
+	if (n < 0)
+		n = -n;
+	x = n % 10;
+	_putchar(x + '0');
+	return (x);
 }
