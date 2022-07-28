@@ -50,7 +50,7 @@ else
 		_memcpy(newPtr, ptr, old_size);
 		free(ptr);
 	}
-	return (newPtr);
+return (newPtr);
 }
 
 return (0);
