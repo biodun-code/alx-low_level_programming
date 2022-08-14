@@ -1,16 +1,24 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
- *   * main - Test function for positive or negative
- *     * Return: 0
-       */
-
+ * main - check the code for Holberton School students.
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
-	int i;
+    unsigned int n;
 
-	i = 0;
-	positive_or_negative(i);
-
-	return (0);
+    n = binary_to_uint("1");
+    printf("%u\n", n);
+    n = binary_to_uint("101");
+    printf("%u\n", n);
+    n = binary_to_uint("1e01");
+    printf("%u\n", n);
+    n = binary_to_uint("1100010");
+    printf("%u\n", n);
+    n = binary_to_uint("0000000000000000000110010010");
+    printf("%u\n", n);
+    return (0);
 }
